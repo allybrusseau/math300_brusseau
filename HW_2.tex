@@ -1,0 +1,46 @@
+\documentclass[12pt]{book}
+\usepackage{fullpage}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+
+\newtheorem{theorem}{Theorem}
+
+\begin{document}
+
+\noindent \textbf{The Lorentz Condition:}
+
+\begin{equation}
+\label{eq:1}
+\frac{1}{c}\frac{{\partial}{\phi}}{\partial t}+\mbox{div}(A)=0
+\end{equation}
+
+\noindent As we shall see, by using what are known as gauge transformations, we can always select potentials for the electromagnetic field that satisfy this condition. The nice part about having the potentials satisfy the Lorentz condition is that the PDE's (9.51)-(9.52) decouple into a pair of wave equations:
+
+$$\frac{{\partial^2}{\phi}}{\partial t^2}-c^2\triangledown^2\phi=4\pi c^2\rho$$
+
+$$\frac{\partial^2 A}{\partial t^2}-c^2\triangledown^2A=4\pi cJ$$
+
+\begin{theorem} \emph (Lorentz Potential Equations)
+On a simply connected spatial region, the vector fields E, B are a solution to Maxwell's equation if and only if
+
+\begin{align}
+E&=-\triangledown\phi-\frac{1}{c}\frac{\partial A}{\partial t},\\
+B&= \mbox{ curl }(A),
+\end{align}
+
+\noindent for some scalar field $\phi$ and vector field A that satisfy the Lorentz potential equations
+
+\begin{align}
+\frac{1}{c}\frac{\partial \phi}{\partial t}+\mbox{div}(A)&=0,\\
+\frac{\partial^2 \phi}{\partial t^2}-c^2\triangledown^2\phi&=4\pi c^2\rho\\
+\frac{\partial^2 A}{\partial t^2}-c^2\triangledown^2A&=4\pi cJ
+\end{align}
+
+\end{theorem}
+
+\noindent \textbf {Proof}
+Suppose first that E, B is a solution of Maxwell's equation.We repeat some of the above arguments because we have to change the notation slightly.You will see why shortly. Thus, since div$(B)$=0, there exists a vector field $A_0$ such that curl$(A_0)$=$B$. Substituting this expression for $B$ into Faraday's law gives curl($\partial A_0/\partial t+E$)=0. Thus there exists a scalar field $\phi_0$ such that $-\triangledown\phi_0=\partial A_0/\partial t$. Rearranging this gives $E=-\triangledown\phi_0-\partial A_0/\partial t$. Thus $E$ and $B$ are given by potentials $\phi_0$ and $A_0$ in the form of equations (9.54)-(9.55).
+
+
+\end{document}
