@@ -1,0 +1,36 @@
+\documentclass{article}[10]
+\usepackage{fullpage}
+\usepackage{graphicx}
+
+\title{Assignment \#6}
+\author{Ally Brusseau}
+\date{November 3, 2017}
+
+\begin{document}
+
+\maketitle
+
+\section*{The Lorenz Attractor}
+The Lorenz system was discovered by Edward Lorenz in 1963. The three equations are used to relate to the properties of a two-dimensional fluid layer that are warmed from above and cooled below.\footnote{Wikipedia, The Lorenz System} These equations also illustrate the rate of change with respect to time and "'x' is proportional to the rate of convection, 'y' to the horizontal temperature variation, and 'z' to the vertical temperature variation."\footnote{Wikipedia, The Lorenz System} Lorenz also found when he was graphing this system that solutions never intersected within themselves and never retraced their path, therefore, creating a new spiral every time the system synchronized.\footnote{How Stuff Works: The Lorenz System}
+
+\section*{How The Code Works}
+
+Overall, I defined the Lorenz code using the specifications listed in the assignment and telling python that I wanted it to run this code 1000 times with a matrix with n row and 3 columns in order to keep it organized in the x, y, z fashion. I also wanted it to show me the matrix as well before I plotted it into python. Furthermore, in Figure 1 I had python plot the function with x=1, y=1, and z=1. and it came out as a very thin infinity looking symbol. This showed me that when input those values the system doesn't have the time allotted to complete the butterfly effect.
+
+\begin{figure}[h]
+\center 
+\caption{The Lorenz system at x=1, y=1, and z=1}
+\includegraphics[width=.60\textwidth]{hw6.png}
+\end{figure}
+
+After plotting the system with the specified parameters I plotted the projection of the iterated sequence with a different x, y, and z value in Figure 2. From this graph I could tell that the larger x, y, and z become the more dense the function would become because the values alloted for more time to create the butterfly image.
+
+\begin{figure}[h]
+\center 
+\caption{The Lorenz system at x=4, y=7, and z=10}
+\includegraphics[width=.60\textwidth]{hw6_2_.png}
+\end{figure}
+
+From these two figures we can see that as the values of x, y, and z grow the system becomes more defined and creates a butterfly shape. Therefore, justifying the the heating and cooling effect of the differential equations.
+
+\end{document}
