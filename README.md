@@ -11,3 +11,5 @@ assn4/: LaTeX and Binary HW
 assn5/: Python HW
 
 assn6/: Lorenz HW
+
+assn7/: Monte Carlo HW
