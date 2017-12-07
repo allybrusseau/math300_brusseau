@@ -13,3 +13,5 @@ assn5/: Python HW
 assn6/: Lorenz HW
 
 assn7/: Monte Carlo HW
+
+assn8/: Shopping HW
